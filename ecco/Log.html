@@ -1,43 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang=en>
 
 	<head>
 		<style>
+body{
+	margin:auto;
+	width:600px;
+	background-image: url(EKOO_Background.png)
+
+}
 ul
 {
 list-style-type:none;
-margin:100dp;
-padding:60dp;
+margin-left:auto;
+margin-right:auto;
+
+overflow:hidden;
+/* padding:60dp; */
 }
 li
 {
 display:inline;
+padding-right: 30px;
 }
+a{
+
+	width:10px;
+}
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: green;
+    clear: left;
+    text-align: center;
+}
+.grid-container {
+display: grid;
+grid-column-gap: 50px;
+}
+
 </style>
-		<ul>
-<li><a href="index.html">Log out</a></li>
-<li><a href="Progress.html">Progress</a></li>
-<li><a href="contact.asp">Leaderboard</a></li>
-<li><a href="about.asp">Contact Us</a></li>
-</ul>
+
 		<meta charset="utf-8" />
 		<title>Set_Number</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<style>
-		.grid-container {
-  display: grid;
-  grid-column-gap: 50px;
-	}
-</style>
+
 	</head>
 
 	<body>
-		<h1> St. Agatha Catholic Elementary School </h1>
+	<div id="nav" style="margin:0px auto">
+		<ul>
+<li><a href="index.html">Log in</a></li>
+<li><a href="Progress.html">Progress</a></li>
+<li><a href="contact.asp">Leaderboard</a></li>
+<li><a href="about.asp">Contact Us</a></li>
+		</ul>
+	</div>
+	<header>
+		 <h1>St. Agatha Catholic Elementary School</h1>
+	</header>
 
 
-			<table>
+			<table style="margin:0px auto">
 			<tr>
-				<td>students<div class="grid-item">
+				<td style="font-size:25px">Students<div class="grid-item">
 					<form>
 						<select name="students">
 							<option value="Tommy">Tommy</option>
@@ -46,7 +73,7 @@ display:inline;
 						</select>
 				</form>
 			</div></td>
-				<td style="padding-left:250px">teachers<div class="grid-container">
+				<td style="padding-left:50px;font-size:25px">Supervisors<div class="grid-container">
 			  	<div class="grid-item">
 						<form>
 							<select name="teachers">
