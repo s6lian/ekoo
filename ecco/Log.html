@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang=en>
+
+	<head>
+		<style>
+ul
+{
+list-style-type:none;
+margin:100dp;
+padding:60dp;
+}
+li
+{
+display:inline;
+}
+</style>
+		<ul>
+<li><a href="index.html">Log out</a></li>
+<li><a href="Progress.html">Progress</a></li>
+<li><a href="contact.asp">Leaderboard</a></li>
+<li><a href="about.asp">Contact Us</a></li>
+</ul>
+		<meta charset="utf-8" />
+		<title>Set_Number</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style>
+		.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+	}
+</style>
+	</head>
+
+	<body>
+		<h1> St. Agatha Catholic Elementary School </h1>
+
+
+			<table>
+			<tr>
+				<td>students<div class="grid-item">
+					<form>
+						<select name="students">
+							<option value="Tommy">Tommy</option>
+							<option value="James">James</option>
+							<option vaue="Oliver">Oliver</option>
+						</select>
+				</form>
+			</div></td>
+				<td style="padding-left:250px">teachers<div class="grid-container">
+			  	<div class="grid-item">
+						<form>
+							<select name="teachers">
+								<option value="Ms.Janice Smith">Ms.Janice Smith</option>
+								<option value="Mr.John Doe">Mr.Joh Doe</option>
+							</select>
+						</form>
+					</div></td>
+			</tr>
+		</table>
+
+
+</div>
+
+
+
+
+
+
+
+		<ul class="btn-numbox">
+			<!-- number -->
+			<p>
+			<li><span class="number"></span></li>
+
+			<li>
+				garage:
+				<ul class="count">
+					<li><span id="num-jian" class="num-jian">-</span></li>
+					<li><input type="text" class="input-num" id="input-num" value="0" /></li>
+					<li><span id="num-jia" class="num-jia">+</span></li>
+				</ul>
+			</li>
+			</p>
+
+			<p>
+			<li><span class="number"></span></li>
+			<li>
+			recycled:
+				<ul class="count">
+					<li><span id="num-jian1" class="num-jian">-</span></li>
+					<li><input type="text" class="input-num" id="input-num1" value="0" /></li>
+					<li><span id="num-jia1" class="num-jia">+</span></li>
+				</ul>
+			</li>
+		</p>
+
+
+					<p>
+					<li><span class="number"></span></li>
+					<li>
+					electricity usage:
+						<ul class="count">
+							<li><span id="num-jian2" class="num-jian">-</span></li>
+							<li><input type="text" class="input-num" id="input-num2" value="0" /></li>
+							<li><span id="num-jia2" class="num-jia">+</span></li>
+						</ul>
+					</li>
+				</p>
+			<!-- typesomething -->
+			<li><span class="kucun"></span></li>
+			</ul>
+	</body>
+
+	<script>
+		var num_jia = document.getElementById("num-jia");
+		var num_jian = document.getElementById("num-jian");
+		var input_num = document.getElementById("input-num");
+		num_jia.onclick = function() {
+			input_num.value = parseInt(input_num.value) + 1;
+		}
+		num_jian.onclick = function() {
+			if(input_num.value <= 0) {
+				input_num.value = 0;
+			} else {
+				input_num.value = parseInt(input_num.value) - 1;
+			}
+		}
+
+		var num_jia1 = document.getElementById("num-jia1");
+		var num_jian1 = document.getElementById("num-jian1");
+		var input_num1 = document.getElementById("input-num1");
+		num_jia1.onclick = function() {
+			input_num1.value = parseInt(input_num1.value) + 1;
+		}
+		num_jian1.onclick = function() {
+			if(input_num1.value <= 0) {
+				input_num1.value = 0;
+			} else {
+				input_num1.value = parseInt(input_num1.value) - 1;
+			}
+		}
+
+		var num_jia2 = document.getElementById("num-jia2");
+		var num_jian2 = document.getElementById("num-jian2");
+		var input_num2 = document.getElementById("input-num2");
+		num_jia2.onclick = function() {
+			input_num2.value = parseInt(input_num2.value) + 1;
+		}
+		num_jian2.onclick = function() {
+			if(input_num2.value <= 0) {
+				input_num2.value = 0;
+			} else {
+				input_num2.value = parseInt(input_num2.value) - 1;
+			}
+		}
+	</script>
+
+</html>
